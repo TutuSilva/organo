@@ -5,8 +5,6 @@ import Botao from "../Botão";
 import { useState } from "react";
 
 const Formu = (props) => {
-
-
   const [nome, setNome] = useState("");
   const [cargo, setCargo] = useState("");
   const [imagem, setImagem] = useState("");
@@ -20,6 +18,10 @@ const Formu = (props) => {
       imagem,
       time,
     });
+    setNome("");
+    setCargo("");
+    setImagem("");
+    setTime("");
   };
   return (
     <section className="formulario-container">
