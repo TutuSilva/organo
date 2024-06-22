@@ -43,8 +43,10 @@ function App() {
     },
   ];
   const [colaboradores, setColaboradores] = useState([]);
+
   const aoNovoColaboradorAdicionado = (colaborador) => {
     setColaboradores([...colaboradores, colaborador]);
+
   };
   return (
     <div className="App">
